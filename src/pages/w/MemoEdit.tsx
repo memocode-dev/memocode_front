@@ -27,6 +27,10 @@ const MemoEdit = () => {
                 content: findMemo.data.content,
             });
         }
+
+        return () => {
+            onMemoUpdateSubmit();
+        }
     }, [findMemo.data]);
 
     useEffect(() => {
